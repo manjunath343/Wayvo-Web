@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-h-screen bg-blue-200"
+  >
+    <h1 class="text-5xl font-bold mb-4">Todo List</h1>
+    <div class="flex flex-col w-full max-w-lg mb-4">
+      <div class="flex space-x-2 mb-4">
+        <input
+          type="text"
+          id="input"
+          placeholder="Enter your task"
+          class="border border-white rounded p-2 flex-grow"
+        />
+        <input
+          type="date"
+          id="date"
+          class="border border-white rounded p-2"
+        />
+        <button
+          onclick="addButton()"
+          class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600"
+        >
+          Add
+        </button>
+      </div>
+      <div
+        class="section1 max-h-80 overflow-auto bg-white rounded shadow p-4"
+      ></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
